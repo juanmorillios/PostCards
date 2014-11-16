@@ -33,13 +33,17 @@ class ViewController: UIViewController {
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         
+    //Ocultamos la etiqueta Label mientras sube la aplicación
+        
      messageLabel.hidden = false
-        messageLabel.text = enterMessageTextField.text
+    
+    // asignamos el contenido del TextField MEnsaje y al mismo tiempo lo presentamos con otro color.
+    messageLabel.text = enterMessageTextField.text
     messageLabel.textColor = UIColor .redColor()
         
-        enterMessageTextField.resignFirstResponder()
+    enterMessageTextField.resignFirstResponder()
 
-        mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
+    mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
         
     
