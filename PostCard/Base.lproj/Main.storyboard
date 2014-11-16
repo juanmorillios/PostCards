@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="526.5" y="387"/>
+            <point key="canvasLocation" x="406.5" y="387"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6mo-iG-unH">
@@ -63,7 +63,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="albert-einstein.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V84-s4-TGM">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="254" y="166" width="100" height="100"/>
+                                    <rect key="frame" x="254" y="159" width="100" height="100"/>
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fmp-yd-Bmn">
@@ -105,6 +105,15 @@
                                     <action selector="sendMailButtonPressed:" destination="Y57-Au-EJP" eventType="touchUpInside" id="sua-Bg-Ux1"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz2-GM-6Tw">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="173" width="230" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -114,6 +123,7 @@
                                 <exclude reference="0ah-BR-Cc1"/>
                                 <exclude reference="O8P-yq-BZy"/>
                                 <exclude reference="6ik-Rf-obp"/>
+                                <exclude reference="Pz2-GM-6Tw"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,6 +133,7 @@
                                 <include reference="0ah-BR-Cc1"/>
                                 <include reference="O8P-yq-BZy"/>
                                 <include reference="6ik-Rf-obp"/>
+                                <include reference="Pz2-GM-6Tw"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,11 +143,12 @@
                         <outlet property="enterNameTextField" destination="Fmp-yd-Bmn" id="z7F-nW-EnY"/>
                         <outlet property="mailButton" destination="6ik-Rf-obp" id="Bcj-t2-aPX"/>
                         <outlet property="messageLabel" destination="0ah-BR-Cc1" id="N68-MK-8UL"/>
+                        <outlet property="nameLabel" destination="Pz2-GM-6Tw" id="1zS-oI-JkW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcG-ha-m7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="387"/>
+            <point key="canvasLocation" x="1105.5" y="376"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s0z-CE-eO7">
