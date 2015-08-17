@@ -13,13 +13,9 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var messageLabel: UILabel!
-    
-    
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
-
     @IBOutlet weak var mailButton: UIButton!
-   
     @IBOutlet weak var nameLabel: UILabel!
     
     
@@ -43,7 +39,6 @@ class ViewController: UIViewController {
     // asignamos el contenido del TextField MEnsaje y al mismo tiempo lo presentamos con otro color.
     messageLabel.text = enterMessageTextField.text
     messageLabel.textColor = UIColor .redColor()
-
     nameLabel.hidden = false
     nameLabel.text = enterNameTextField.text
     nameLabel.textColor = UIColor.blueColor()
@@ -55,7 +50,6 @@ class ViewController: UIViewController {
 
     //Ocultar teclado una vez se escriba el mensaje
     enterMessageTextField.resignFirstResponder()
-
     mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         
     
